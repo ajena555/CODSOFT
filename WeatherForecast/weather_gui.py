@@ -11,7 +11,7 @@ window.configure(bg='sky blue')
 def get_weather():
     global city
     city=entry1.get()
-    api_key='110fa0a8c65a12e069fab440aee2bb6c'
+    api_key=''
     url=f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
     response=requests.get(url)
     if response.status_code==200:
